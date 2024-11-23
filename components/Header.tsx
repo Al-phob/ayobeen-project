@@ -9,7 +9,7 @@ import MobileNav from './MobileNav'
 export default function Header() {
   return (
     <header className=" bg-white bg-repeat border-gray-400 w-full z-20 top-0 start-0 border-b dark:bg-white">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl disp flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <Image 
               src="/image/ayobeen-1.png"
