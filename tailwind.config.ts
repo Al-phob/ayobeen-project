@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc/generated-native";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,6 +10,21 @@ export default {
   ],
   theme: {
   	extend: {
+	
+		// Ajout pour l'animation de AyoBeen
+		/* 
+			keyframes: {
+				fadeIn: {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				}
+			},
+			animation: {
+				fadeInLetter: 'fadeInLetter 5s ease-out forwards'
+			},
+		*/
+		
+
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
