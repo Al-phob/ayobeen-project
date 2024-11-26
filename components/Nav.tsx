@@ -28,8 +28,8 @@ const Nav = () => {
             {links.map((link, index) => {
                 return (
                     <Link href = {link.path} key={index} className={`${link.path === pathname &&
-                        "text-green-800 border-b-2 border-emerald-500"
-                    } font-medium hover:text-emerald-700 transition-all`}>
+                        "text-white border-b-2 border-black"
+                    } text-white font-medium hover:text-green-800 transition-all`}>
                         {link.name}
                     </Link>
                 );
