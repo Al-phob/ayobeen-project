@@ -1,10 +1,12 @@
 import { FiDownload } from "react-icons/fi"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 // components
 import Social from "@/components/Social"
 import Logo from "@/components/Logo"
 import TextAnimation from "@/components/TextAnimation"
+
 
 const Home = () => {
   return (
@@ -28,7 +30,7 @@ const Home = () => {
 
            {/* <Button className="hover:bg-green-600 uppercase gap-2 transition duration-500 ease-in-out">Nos Collections</Button> */}
 
-            <div className="fixed xl:bottom-4 xl:left-4 2xl:bottom-10 2xl:left-10 hidden lg:flex flex-col gap-3 z-20">
+            <div className="flex justify-center items-center xl:bottom-4 xl:left-4 2xl:bottom-10 2xl:left-10 lg:flex flex-col gap-3 z-20">
               <Social 
                 containerStyles="flex" 
                 iconStyles="w-9 h-9 border border-green-600 rounded-full flex justify-center items-center text-green-600 text-base 
@@ -49,7 +51,7 @@ const Home = () => {
 
       <div className="h-full mix-blend-darken mt-10">
         <div className="grid grid-cols-2">
-          <div className="flex flex-col">
+          <div className="flex flex-col 2xl:ml-52">
             {/*Image */}
             <Image
               src="/image/pull_collection.jpg"
@@ -59,18 +61,21 @@ const Home = () => {
               className="object-contain"
             />
           </div>
-          <div className="flex flex-col items-center bg-white h-full">
+          <div className="flex flex-col items-center bg-white">
             {/* text */}
-            <div className="xl:mt-80 mt-60">
+            <div className="mt-60 xl:mt-80 2xl:mr-36">
               <p className="h2 text-center mb-9">
                 Découvrez notre nouvelle collection de pull.
               </p>
             </div>
             {/* Button */}
             <div className="flex justify-center items-center">
-              <Button className="hover:bg-green-600 uppercase transition duration-500 ease-in-out">
-                Nouvelle collection
-              </Button>
+              <Link href="/collections/pull">
+                <Button className="hover:bg-green-600 uppercase transition duration-500 ease-in-out 2xl:mr-20">
+                  Nouvelle collection
+                </Button>
+              </Link>
+              
             </div>
           </div>
         </div>
@@ -93,15 +98,18 @@ const Home = () => {
           <div className="flex flex-col items-center bg-white h-full order-1">
             {/* text */}
             <div className="xl:mt-80 mt-60">
-              <p className="h2 text-center mb-9">
+              <p className="h2 text-center mb-9 2xl:ml-44">
                 Notre Best-Seller.
               </p>
             </div>
             {/* Button */}
             <div className="flex justify-center items-center">
-              <Button className="hover:bg-green-600 uppercase transition duration-500 ease-in-out">
-                Collection classique
-              </Button>
+              <Link href="/collections/classique">
+                <Button className="hover:bg-green-600 uppercase transition duration-500 ease-in-out 2xl:ml-36">
+                  Collection classique
+                </Button>
+              </Link>
+              
             </div>
           </div>
         </div>

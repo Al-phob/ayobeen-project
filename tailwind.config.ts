@@ -11,6 +11,9 @@ export default {
   theme: {
   	extend: {
 	
+		backgroundImage: {
+			ayoImg: "url('/image/AYOBEEN_g.jpg')"
+		},
 		// Ajout pour l'animation de AyoBeen
 		/* 
 			keyframes: {
