@@ -40,7 +40,6 @@ const articles = [
     image: "/image/pull-white.jpg",
     hoverImage: "/image/pull-white.jpg"
   }
-  
 
 ]
 
@@ -101,7 +100,11 @@ const pull = () => {
                 />
               </div>
               <div className="p-4">
-                <h2 className="text-lg font-semibold mb-2">{article.name}</h2>
+                <div className='flex justify-between  mb-2'>
+                  <h2 className="text-lg font-semibold">{article.name}</h2>
+                  <span className='text-gray-600 mt-1'>S-XL</span>
+                </div>
+                
                 <p className="text-emerald-600 mb-4">{article.price}</p>
                 
               </div>
