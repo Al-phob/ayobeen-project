@@ -25,7 +25,7 @@ const Home = () => {
             </h1>
 
             <p className="max-w-[500px] mb-16 text-gray-900">
-              Because we love Benin and these colors.
+              Because we love Benin and its colors.
             </p>
 
            {/* <Button className="hover:bg-green-600 uppercase gap-2 transition duration-500 ease-in-out">Nos Collections</Button> */}
