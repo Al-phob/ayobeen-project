@@ -1,9 +1,7 @@
 "use client"
 
-import { delay, motion } from "framer-motion"
-import Image from "next/image"
+import { motion } from "framer-motion"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 
 
@@ -28,7 +26,6 @@ const collections = [
 ]
 
 const Collections = () => {
-  const pathname = usePathname();
 
   return (
     <section className="font-serif min-h-[80vh] flex flex-col justify-center py-12 px-7 xl:py-0">

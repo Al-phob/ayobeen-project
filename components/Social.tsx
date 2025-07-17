@@ -1,7 +1,5 @@
 
-import { Target } from "lucide-react"
 import Link from "next/link"
-import path from "path"
 
 import { FaInstagram } from "react-icons/fa"
 

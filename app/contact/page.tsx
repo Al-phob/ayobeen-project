@@ -13,7 +13,7 @@ const Contact = () => {
 
         <h2 className="text-5xl font-bold">Contactez-nous</h2>
         <p className="text-gray-700 max-w-xl mx-auto text-center px-3 py-6"> Nous sommes là pour répondre à vos questions.
-          N'hésitez pas à nous écrire pour toute information supplémentaire. Nous vous répondrons
+          N&apos;hésitez pas à nous écrire pour toute information supplémentaire. Nous vous répondrons
           dans les plus brefs délais.
         </p>
         
@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="flex flex-col justify-center items-center space-y-4 py-4">
             <MapPin className="text-gray-600 font-bold w-32 h-14 " />
             <span className="uppercase font-bold text-emerald-700">A d d r e s s</span>
-            <p className="text-lg max-w-56 text-center">1001 Rue Lucien-L'Allier</p>
+            <p className="text-lg max-w-56 text-center">1001 Rue Lucien-L&apos;Allier</p>
 
           </div>
 

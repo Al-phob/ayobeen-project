@@ -30,7 +30,7 @@ const Compte = () => {
                 </div>
 
                 <div className="flex items-start pt-2">
-                    <a href="/" className="underline border-black hover:text-emerald-700">Mot de passe oublié ?</a>
+                    <Link href="/" className="underline border-black hover:text-emerald-700">Mot de passe oublié ?</Link>
                 </div>
 
                 
