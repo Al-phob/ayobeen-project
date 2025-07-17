@@ -15,6 +15,10 @@ const links = [
         path: "/collections"
     },
     {
+        name: "Mon Compte",
+        path: "/compte"
+    },
+    {
         name: "Contact",
         path: "/contact"
     }

@@ -1,4 +1,4 @@
-import { FiDownload } from "react-icons/fi"
+
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
@@ -61,17 +61,17 @@ const Home = () => {
               className="object-contain"
             />
           </div>
-          <div className="flex flex-col items-center bg-white">
+          <div className="flex flex-col justify-center items-center bg-white">
             {/* text */}
-            <div className="mt-60 xl:mt-80 2xl:mr-36">
-              <p className="h2 text-center mb-9">
+            <div className="">
+              <p className="h2 text-center text-[clamp(4vw,5vw,2rem)] px-3 mb-9">
                 Découvrez notre nouvelle collection de pull.
               </p>
             </div>
             {/* Button */}
             <div className="flex justify-center items-center">
               <Link href="/collections/pull">
-                <Button className="hover:bg-green-600 uppercase transition duration-500 ease-in-out 2xl:mr-20">
+                <Button className="hover:bg-green-600 uppercase transition duration-500 ease-in-out">
                   Nouvelle collection
                 </Button>
               </Link>
@@ -82,8 +82,8 @@ const Home = () => {
   
       </div>
 
-      <div>
-      <div className="h-full mix-blend-darken">
+    
+      <div className="h-full mix-blend-darken mb-5">
         <div className="grid grid-cols-2">
           <div className="flex flex-col order-2">
             {/*Image */}
@@ -95,10 +95,10 @@ const Home = () => {
               className="object-contain"
             />
           </div>
-          <div className="flex flex-col items-center bg-white h-full order-1">
+          <div className="flex flex-col justify-center items-center bg-white h-full order-1">
             {/* text */}
-            <div className="xl:mt-80 mt-60">
-              <p className="h2 text-center mb-9 2xl:ml-44">
+            <div className="">
+              <p className="h2 text-center text-[clamp(4vw,5vw,2rem)] px-3 mb-9 2xl:ml-44">
                 Notre Best-Seller.
               </p>
             </div>
@@ -116,7 +116,7 @@ const Home = () => {
   
       </div>
 
-      </div>
+     
     </section>
 
   )

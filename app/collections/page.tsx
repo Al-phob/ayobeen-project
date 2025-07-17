@@ -29,7 +29,7 @@ const Collections = () => {
   const pathname = usePathname();
 
   return (
-    <section className="font-serif min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+    <section className="font-serif min-h-[80vh] flex flex-col justify-center py-12 px-7 xl:py-0">
       <div className="flex justify-center items-center text-center">
         <motion.div
           initial={{ opacity: 0 }}

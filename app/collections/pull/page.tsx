@@ -47,7 +47,7 @@ const pull = () => {
   return (
     <section className='h-full mt-5'>
 
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 px-3">
 
         <div className="order-2 flex flex-col 2xl:ml-32">
           {/*Image */}
@@ -60,11 +60,11 @@ const pull = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center bg-white">
+        <div className="flex flex-col justify-center items-center bg-white">
 
           {/* text */}
-          <div className="2xl:mt-72 xl:mt-80 2xl:ml-36">
-            <p className="h2 text-center mb-9">
+          <div className="px-5">
+            <p className="h2 text-center text-[clamp(h2,3vw,2rem)] mb-9">
               Notre nouvelle collection de pull.
             </p>
           </div>
@@ -75,13 +75,13 @@ const pull = () => {
 
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">Découvrez nos articles</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article) => (
             <div
               key={article.id}
               className="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 group"
             >
-              <div className="relative w-full h-64 overflow-hidden">
+              <div className="relative w-full h-96 overflow-hidden">
                 {/* Image par défaut */}
                 <Image
                   src={article.image}

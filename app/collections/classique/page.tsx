@@ -40,12 +40,12 @@ const classique = () => {
   return (
     <section className='h-full mt-5'>
 
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 px-3">
       
         <div className="order-2 flex flex-col 2xl:ml-32">
           {/* Video */}
           <video
-            className="w-2/4 mx-auto rounded-lg shadow-[16px_-8px_7px_-2px_rgba(34,_197,_94,_0.5)]"
+            className="w-3/4 mx-auto rounded-lg shadow-[16px_-8px_7px_-2px_rgba(34,_197,_94,_0.5)]"
             autoPlay
             loop
             muted
@@ -55,11 +55,11 @@ const classique = () => {
           </video>
         </div>
 
-        <div className="flex flex-col items-center bg-white">
+        <div className="flex flex-col justify-center items-center bg-white">
 
           {/* text */}
-          <div className="mt-40 2xl:mt-72 xl:mt-80 2xl:ml-36">
-            <p className="h2 text-center mb-9">
+          <div className="">
+            <p className="h2 text-center text-[clamp(6vw,7vw,2rem)] mb-9">
               Notre collection de t-shirts pour femmes.
             </p>
           </div>
@@ -70,13 +70,13 @@ const classique = () => {
 
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">Découvrez nos articles</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {articles.map((article) => (
             <div
               key={article.id}
               className="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 group"
             >
-              <div className="relative w-full h-64 overflow-hidden">
+              <div className="relative w-full h-96 overflow-hidden">
                 {/* Image par défaut */}
                 <Image
                   src={article.image}

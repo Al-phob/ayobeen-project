@@ -9,12 +9,12 @@ const Contact = () => {
       <div className="flex flex-col justify-center items-center">
 
         <h2 className="text-5xl font-bold">Contactez-nous</h2>
-        <p className="text-gray-700 max-w-xl mx-auto text-center py-6"> Nous sommes là pour répondre à vos questions.
+        <p className="text-gray-700 max-w-xl mx-auto text-center px-3 py-6"> Nous sommes là pour répondre à vos questions.
           N'hésitez pas à nous écrire pour toute information supplémentaire. Nous vous répondrons
           dans les plus brefs délais.
         </p>
         
-        <div className="flex flex-row gap-24">
+        <div className="flex flex-col md:flex md:flex-row gap-24">
           {/* Address */}
           <div className="flex flex-col justify-center items-center space-y-4 py-4">
             <MapPin className="text-gray-600 font-bold w-32 h-14 " />
