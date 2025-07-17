@@ -1,6 +1,9 @@
-"use client"
 
 import { Mail, Phone, MapPin} from "lucide-react"
+
+export const metadata = {
+  title: "Contact",
+};
 
 const Contact = () => {
   return (

@@ -1,6 +1,10 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 
+export const metadata = {
+  title: "Nouveau Compte",
+};
+
 const newAccount = () => {
   return (
 
@@ -12,7 +16,7 @@ const newAccount = () => {
             </h1>
         </div>
 
-        <form className="max-w-md mt-8 mx-auto font-times">
+        <form className="max-w-md mt-8 mx-auto px-5 font-times">
             <div className="relative z-0 w-full mb-5 group">
                 <input type="email" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-emerald-700 peer" placeholder=" " required />
                 <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
